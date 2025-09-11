@@ -1,0 +1,6 @@
+select * from professor;
+
+SELECT NAME
+     , EMAIL
+     , SUBSTR(EMAIL, INSTR(EMAIL, '@')+1, (INSTR(EMAIL,'.')-1) -(INSTR(EMAIL, '@'))) "DOMAIN"
+  FROM PROFESSOR;
